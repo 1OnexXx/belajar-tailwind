@@ -26,3 +26,13 @@ audio.addEventListener('pause', function() {
 audio.addEventListener('error', function(e) {
     console.error("Audio error:", e);
 });
+
+
+const checkbox = document.querySelector('#toggle');
+const html = document.querySelector('html');
+
+checkbox.addEventListener('click' , function(){
+
+    checkbox.checked ? html.classList.add('dark') : html.classList.remove('dark');
+
+});
